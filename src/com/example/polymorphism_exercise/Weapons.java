@@ -5,6 +5,11 @@ class Sword implements Weapon {
         opponent.decHealth(5);
         // etc.
     }
+
+    @Override
+    public void strike(Weapon opponent) {
+        
+    }
 }
 
 class Wand implements Weapon {
@@ -13,6 +18,11 @@ class Wand implements Weapon {
         opponent.decHealth(3);
         // etc.
     }
+
+    @Override
+    public void strike(Weapon opponent) {
+       
+    }
 }
 
 class Whip implements Weapon {
@@ -20,5 +30,10 @@ class Whip implements Weapon {
         System.out.println("Snapping " + opponent.getName());
         opponent.decHealth(4);
         // etc.
+    }
+
+    @Override
+    public void strike(Weapon opponent) {
+       
     }
 }
